@@ -21,11 +21,11 @@ const Home = () => {
 
 			<div className= "container">
 				<SecondsCounter number={<span className= 'fa fa-clock'></span>}/>
-				<SecondsCounter number={Math.floor  (timer/10)%100000}/>
-				<SecondsCounter number={Math.floor (timer/10)%10000}/>
-				<SecondsCounter number={Math.floor (timer/10)%1000}/>
-				<SecondsCounter number={Math.floor (timer/10)%100}/>
-				<SecondsCounter number={Math.floor (timer/10)%10}/>
+				<SecondsCounter number={Math.floor  ((timer/100000)%100)%10}/>
+				<SecondsCounter number={Math.floor ((timer/10000)%100)%10}/>
+				<SecondsCounter number={Math.floor ((timer/1000)%100)%10}/>
+				<SecondsCounter number={Math.floor ((timer/100)%100)%10}/>
+				<SecondsCounter number={Math.floor ((timer/10)%100)%10}/>
 				<SecondsCounter number={Math.floor (timer%10)}/>
 			</div>
 
